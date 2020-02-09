@@ -1,6 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
+import { addDecorator } from '@storybook/react'
 
 export default {
   title: 'Button',
@@ -16,3 +17,5 @@ export const Emoji = () => (
     </span>
   </Button>
 );
+
+addDecorator( storyFn => <div style={{ textAlign: 'center' }}>{storyFn()}</div>) 
