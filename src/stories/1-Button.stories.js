@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
 import { addDecorator } from '@storybook/react'
 import { load, addParameters } from '@storybook/react';
-import defaultNotes from './instructions.md';
+// import defaultNotes from './instructions.md';
 
 export default {
   title: 'Button',
@@ -27,4 +27,4 @@ Emoji.story = {
 
 
 addDecorator( storyFn => <div style={{ textAlign: 'center' }}>{storyFn()}</div>)
-addParameters({ notes: defaultNotes });
+// addParameters({ notes: defaultNotes });
