@@ -6,9 +6,9 @@ import { addDecorator } from '@storybook/react'
 export default {
   component: Task,
   title: 'Task',
-  // Our exports that end in "Data" are not stories.
+  // The exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
-  decorators: [storyFn => <div style={{backgroundColor: 'violet'}}>{storyFn()}</div>]
+  decorators: [storyFn => <div style={{backgroundColor: 'violet', padding: '2.0em', borderRadius: '20px'}}>{storyFn()}</div>]
 };
 
 export const taskData = {
@@ -26,6 +26,9 @@ export const actionsData = {
 export const Default = () => {
   return <Task task={{ ...taskData }} {...actionsData} />;
 };
+Default.story = {
+  decorators: [storyFn => <div style={{borderRadius: '20px'}}>{storyFn()}</div>]
+}
 
 export const Pinned = () => <Task task={{ ...taskData, state: 'TASK_PINNED' }} {...actionsData} />;
 

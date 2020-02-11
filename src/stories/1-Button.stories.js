@@ -24,5 +24,4 @@ Emoji.story = {
 }
 
 
-addDecorator( storyFn => <div style={{ textAlign: 'center' }}>{storyFn()}</div>)
-// addParameters({ notes: defaultNotes });
+addDecorator( storyFn => <div style={{ textAlign: 'center' }}>{storyFn()}</div> )
