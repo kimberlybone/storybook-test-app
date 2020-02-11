@@ -1,12 +1,14 @@
 import Task from './Task';
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import { addDecorator } from '@storybook/react'
 
 export default {
   component: Task,
   title: 'Task',
   // Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
+  decorators: [storyFn => <div style={{backgroundColor: 'violet'}}>{storyFn()}</div>]
 };
 
 export const taskData = {
