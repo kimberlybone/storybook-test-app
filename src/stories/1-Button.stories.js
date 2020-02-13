@@ -20,7 +20,7 @@ export const Emoji = () => (
   </Button>
 );
 Emoji.story = {
-  decorators: [storyFn => <div style={{ border: '5px solid purple'}}>{storyFn()}</div>]
+  decorators: [storyFn => <div style={{ border: '5px solid purple' }}>{storyFn()}</div>]
 }
 
 
