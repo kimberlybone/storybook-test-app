@@ -10,11 +10,6 @@ export default {
   decorators: [storyFn => <div style={{ backgroundColor: 'pink' }}>{storyFn()}</div>],
 };
 
-storiesOf('Button', module)
-  .add('default - medium', () => {
-    <Button size={ ButtonSize.MEDIUM } onClick={action('I was clicked')}>Read more!</Button>
-  })
-
 export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
 
 export const Emoji = () => (
