@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { Button } from '@storybook/react/demo';
 import { addDecorator } from '@storybook/react'
-import { storiesOf } from '@storybook/react'
+// import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
 
 export default {
