@@ -41,7 +41,6 @@ function TaskList({ loading, tasks, onPinTask, onArchiveTask }){
 
 TaskList.propTypes = {
   loading: PropTypes.bool,
-  // tasks: PropTypes.arrayOf(Task.PropTypes.task).isRequired,
   tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
   onPinTask: PropTypes.func.isRequired,
   onArchiveTask: PropTypes.func.isRequired
