@@ -1,5 +1,5 @@
 import React from 'react'
-import TaskList from './TaskList'
+import { PureTaskList } from './TaskList'
 import { taskData, actionsData } from './Task.stories'
 
 export default {
